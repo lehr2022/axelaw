@@ -1,25 +1,49 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import PageInicio from './components/PageInicio';
+import Menu from './components/Menu';
+import Servicios from './components/Servicios';
+import Consulta from './components/Consulta';
+import Casos from './components/Casos';
+import Somos from './components/Somos';
+import Contacto from './components/Contacto';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+class App extends Component{
+  render (){
+
+
+      return (
+      <>
+
+        <Router>
+          <Menu />
+          <Routes>
+            <Route path='/' element={<PageInicio />}/>
+            <Route path='/PageInicio' element={<PageInicio/>}/> 
+            <Route path='/Casos' element={<Casos/>}/> 
+            <Route path='/Consulta' element={<Consulta/>}/> 
+            <Route path='/Contacto' element={<Contacto/>}/>
+            <Route path='/Servicios' element={<Servicios/>}/>
+            <Route path='/Somos' element={<Somos/>}/>
+        
+
+          </Routes>
+        </Router>
+
+
+      </>
+
+    )
+
+
+
+
+
+
+  };
 }
 
 export default App;
