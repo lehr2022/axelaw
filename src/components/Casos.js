@@ -52,8 +52,8 @@ class Casos extends Component{
                 <img src={image('./29861bdca0a74ce3cfe5cc1bff37c8cc.jpeg')} 
                 alt={image}
                 class="u-expanded-width u-image u-image-4"/>
-                  <h5 class="u-align-center u-text u-text-9">AXÉ ABOGADOS</h5>
-                  <p class="u-align-center u-text u-text-10">Asesorando empresas y personas de éxito
+                  <h5 class="u-align-center u-text u-text-9">SEVERO SINVERGUENZA</h5>
+                  <p class="u-align-center u-text u-text-10">Severo sinvergüenza es una marca que le apuesta a la innovación
                   </p>
                 </div>
               </div>
@@ -62,11 +62,13 @@ class Casos extends Component{
         </div>
       </div>
     </section>
-    <section class="u-backlink  u-grey-80">
-          <a class="u-link" href="https://www.linkedin.com/in/devinsonma94/" target="_blank">
-          <span>Powered by aldemar.online</span>
-          </a>       
-        </section>
+    <div className= "u-backlink  u-grey-80">
+                <span>Powered by </span>
+                <a className="u-link" href="https://www.linkedin.com/in/devinsonma94/" target="_blank" rel="noopener noreferrer">
+                <span> aldemar.online ©</span>
+                  </a>
+                  <span> To Axeabogados &amp; Copyright 2023. Todos los derechos reservados</span>
+                </div>
     
     </body>
         )

@@ -50,9 +50,11 @@ class Menu extends Component{
                       <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
                         <div class="u-container-layout u-valign-middle u-container-layout-2">
                             <h3 class="u-custom-font u-font-oswald u-text u-text-1">¿Quiénes Somos?</h3>
-                            <p class="u-text u-text-2" >En AXÉ ABOGADOS nos hemos convertido en asesores legales para empresas y personas de éxito. Somos profesionales del derecho ubicados en la ciudad de Cali - Colombia, que brindamos acompañamiento y garantía al empresario colombiano para el crecimiento de su emprendimiento y/o empresa.
+                            <p class="u-text u-text-2" >En Axeabogados somos abogados especializados en derecho Laboral y Comercial, con amplia experiencia en propiedad intelectual e industrial.®️©️🇨🇴.
+
+                            Queremos garantizar a nuestros clientes, en su máxima expresión la prevención de controversias jurídicas en sus negociaciones comerciales, así como también ser sus aliados estratégicos para el crecimiento firme de sus empresas y ayudarlos a la protección integral de los activos fijos tangibles e intangibles. 
                            
-                            ayudándolo en todas sus acciones legales, evitando controversias jurídicas que pongan en riesgo su patrimonio, tiempo e inversiones presentes y futuras. Nuestras garantías se ofrecen a través de abogados con amplio espectro en los ámbitos del derecho comercial, servicios corporativos, de inversión, financieros y bancarios, marítimos, litigios y servicios legales especializados sobre todos los aspectos de la actividad comercial.
+                    
                        
                             
                             </p>
@@ -65,12 +67,13 @@ class Menu extends Component{
           </div>
         </section>
 
-
-        <section class="u-backlink  u-grey-80">
-          <a class="u-link" href="https://www.linkedin.com/in/devinsonma94/" target="_blank">
-          <span>Powered by aldemar.online</span>
-          </a>       
-        </section>
+        <div className= "u-backlink  u-grey-80">
+                <span>Powered by </span>
+                <a className="u-link" href="https://www.linkedin.com/in/devinsonma94/" target="_blank" rel="noopener noreferrer">
+                <span> aldemar.online ©</span>
+                  </a>
+                  <span> To Axeabogados &amp; Copyright 2023. Todos los derechos reservados</span>
+                </div>
 
 
 

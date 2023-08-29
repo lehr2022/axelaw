@@ -172,11 +172,13 @@ class Servicios extends Component{
               </div>
             </div>
           </section>
-          <section class="u-backlink  u-grey-80">
-          <a class="u-link" href="https://www.linkedin.com/in/devinsonma94/" target="_blank">
-          <span>Powered by aldemar.online</span>
-          </a>       
-        </section>
+          <div className= "u-backlink  u-grey-80">
+                <span>Powered by </span>
+                <a className="u-link" href="https://www.linkedin.com/in/devinsonma94/" target="_blank" rel="noopener noreferrer">
+                <span> aldemar.online ©</span>
+                  </a>
+                  <span> To Axeabogados &amp; Copyright 2023. Todos los derechos reservados</span>
+                </div>
           </body>
 
 
