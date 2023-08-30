@@ -1,17 +1,33 @@
 import React, { Component } from "react"
 import './Consulta.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Itemcard from "./Itemcard";
+import data from "./Planes";
 
 
 
 class Consulta extends Component{
     render(){
         return(
-            <body data-home-page="https://website5392013.nicepage.io/Page-2.html?version=a4b6c70b-1531-4be9-b3e9-4c3417efe825" data-home-page-title="Page 2" class="u-body u-xl-mode" data-lang="es"> 
-            <section class="u-clearfix u-palette-5-light-3 u-section-7" id="sec-7ee3">
-            <h1>Proximamente podrás elegir el tipo de consulta que deseas, pagar en linea y recibir tu respues de 1 a 72 horas habiles</h1>
-            <h2>Acompañamiento, asistencia legal, concepto juridico, elaboración o revisión de contrato y/o acuerdo comercial, y formato de creación de empresas</h2>
+            <body className="u-body u-xl-mode" data-lang="es"> 
+            <section className="u-clearfix u-palette-4-dark-2 u-section-3" id="sec-2fd2">
+            <div class="u-align-center u-container-style u-group u-group-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <h1 class="u-custom-font u-font-oswald u-text-body-alt-color u-text-1">NUESTROS PLANES</h1>
+                </div>
+              </div>
+
+            <section className="py-4 container">         
+            <div className = "row justify-content-center">
+                {data.productData.map((item, index)=>{
+                    return(<Itemcard img={item.img} title={item.title} desc={item.desc} price={item.price} key={index}/>)
+                })}
+                
+            </div>
             </section>
+
+            </section>
+         
 
             <div className= "u-backlink  u-grey-80">
                 <span>Powered by </span>

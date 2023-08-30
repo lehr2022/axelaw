@@ -1,0 +1,34 @@
+
+.card-title{
+    font-family: Roboto,sans-serif !important;
+    text-align: center;
+    margin: auto !important;
+    text-shadow: 2px 2px 5px #A5BFB1;
+    color: #084325;
+    font-weight: 600;  
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.card-body{
+    text-align: center;
+
+}
+
+.card-text-price{
+    font-family: Roboto,sans-serif !important;
+    color: #084325;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    font-size: 24px;
+    border: 2px #A5BFB1;
+    border-radius: 60px;
+    padding: 8px;
+    background-color:  #a5bfb141;
+ 
+}
+
+.card-text{
+    text-align: justify;
+    list-style-type:  "✓";
+}

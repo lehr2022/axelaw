@@ -58,7 +58,12 @@ class Menu extends Component{
                        
                             
                             </p>
+
+                            <p class="u-text u-text-2" >La hora actual es: {new Date().toLocaleTimeString()}</p>
+
                         </div>
+
+                        
               
                       </div>
                     </div>
