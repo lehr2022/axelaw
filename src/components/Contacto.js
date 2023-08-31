@@ -58,8 +58,8 @@ class Contacto extends Component{
               <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                 <div class="u-container-layout">
                   <div class="u-expanded u-grey-light-2 u-map">
-                    <div class="embed-responsive">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127449.06809463825!2d-76.53871021464842!3d3.402946932395762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0cc4bb3f1%3A0x1f0fb5e952ae6168!2sCali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1689398782197!5m2!1ses-419!2sco" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="embed-responsive" eslint-disable-next-line>
+                    <iframe class = "Maapps"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127449.06809463825!2d-76.53871021464842!3d3.402946932395762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0cc4bb3f1%3A0x1f0fb5e952ae6168!2sCali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1689398782197!5m2!1ses-419!2sco" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                 </div>
@@ -82,10 +82,11 @@ class Contacto extends Component{
             <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-valign-top u-container-layout-1">
                 <h2 class="u-custom-font u-font-oswald u-text u-text-1">CONTACTANOS</h2>
-                <p class="u-text u-text-2">3017274992,
-                3008682572,
-                <a href="mailto:comercial@axeabogados.com.co">comercial@axeabogados.com.co</a>,
-                <a href="mailto:marcas@axeabogados.com.co"> marcas@axeabogados.com.co</a></p>
+                <ul class="u-text u-text-2">
+                  <li>3017274992</li>
+                  <li>3008682572</li>
+                  <li><a href="mailto:comercial@axeabogados.com.co">comercial@axeabogados.com.co</a></li>
+                  <li><a href="mailto:marcas@axeabogados.com.co"> marcas@axeabogados.com.co</a></li></ul>
                 </div>
             </div>
             <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">

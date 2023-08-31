@@ -1,11 +1,25 @@
 import './Itemcard.css';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
+
+
+
 const Itemcard = (props)=> {
+
+const [show, setShow] = useState(false);
+
+const handleClose = () => setShow(false);
+const handleShow = () => setShow(true);
 
 const listItems = props.desc.map((desc) =>
   <li key={desc.toString()}>
     {desc}
-  </li>
-);
+  </li>);
+
+
 
         return (
    
@@ -18,10 +32,31 @@ const listItems = props.desc.map((desc) =>
                         <ul className="card-text">
                             <li>{listItems}</li>
                         </ul>
-                        <button className="btn btn-primary">Contratar</button>
+                        <button className="btn btn-primary" onClick={handleShow}>Contratar</button>
                         </div>
                 </div>
-            </div>
+
+
+                <Modal show={show} onHide={handleClose}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Completar compra</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>¡Ya casi lo logras! Completa tu pedido</Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                      Volver
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                      Enviar pago seguro
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+         
+
+              
+
+        </div>
+
         )
     
 }

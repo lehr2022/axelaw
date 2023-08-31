@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import './PageInicio.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const image = require.context('../images',true);
+
 
 
 
@@ -30,6 +35,7 @@ class Menu extends Component{
             <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-1">
                 <h1 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-title u-text-1">AXÉ ABOGADOS</h1>
                 <h3 class="u-text u-text-2">Asesorando empresas y personas de éxito</h3>
+                    
             </div>
             </div>
             </div>
@@ -49,22 +55,21 @@ class Menu extends Component{
                     </div>
                       <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
                         <div class="u-container-layout u-valign-middle u-container-layout-2">
-                            <h3 class="u-custom-font u-font-oswald u-text u-text-1">¿Quiénes Somos?</h3>
-                            <p class="u-text u-text-2" >En Axeabogados somos abogados especializados en derecho Laboral y Comercial, con amplia experiencia en propiedad intelectual e industrial.®️©️🇨🇴.
-
+                        <div className="u-clearfix u-sheet u-sheet-1" text-align= "center">                               
+                              <a href="https://www.facebook.com/people/AX%C3%89-Abogados/100063912185843/" className="i" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebook} className="fa-brands fa-facebook" /></a>
+                              <a href="https://www.instagram.com/axeabogados/" className="i" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} className="fa-brands fa-instagram" /></a>
+                              <a href="https://wa.me/573008682573?text=Hola%20Dra%20Lina%20Casanova,%20Me%20encuentro%20navegando%20por%20su%20pagina%20web%20y%20estoy%20interesado(a)%20en%20una%20asesoria%20suya" className="i" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-brands fa-whatsapp" /></a>
+                              <h3 class="u-custom-font u-font-oswald u-text u-text-1">¿Quiénes Somos?</h3>
+                              <p class="u-text u-text-2" >En Axeabogados somos abogados especializados en derecho Laboral y Comercial, con amplia experiencia en propiedad intelectual e industrial. ®️©️ 🇨🇴.
                             Queremos garantizar a nuestros clientes, en su máxima expresión la prevención de controversias jurídicas en sus negociaciones comerciales, así como también ser sus aliados estratégicos para el crecimiento firme de sus empresas y ayudarlos a la protección integral de los activos fijos tangibles e intangibles. 
-                           
-                    
-                       
-                            
                             </p>
 
                             <p class="u-text u-text-2" >La hora actual es: {new Date().toLocaleTimeString()}</p>
 
+                              </div>
+                            
                         </div>
 
-                        
-              
                       </div>
                     </div>
                 </div>

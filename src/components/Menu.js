@@ -27,9 +27,12 @@ class Menu extends Component{
                 data-image-height="10"/>
               </Link>
             </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              
+
+            
+          <Navbar.Toggle aria-controls="basic-navbar-nav" justify="end"/>
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
+              <Nav className="me-auto" >
                 <Link className="nav-link active" href="#" to='/PageInicio' >Inicio</Link> 
                 <Link className="nav-link" href="#" to='/Servicios' >Areas de Experiencia</Link> 
                 <Link className="nav-link" href="#" to='/Consulta'>Contratar Servicios</Link> 
