@@ -8,7 +8,7 @@ import Consulta from './components/Consulta';
 import Casos from './components/Casos';
 import Somos from './components/Somos';
 import Contacto from './components/Contacto';
-
+import { CartProvider } from 'react-use-cart';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 class App extends Component{
@@ -17,7 +17,7 @@ class App extends Component{
 
       return (
       <>
-
+<CartProvider>
         <Router>
           <Menu />
           <Routes>
@@ -32,7 +32,7 @@ class App extends Component{
 
           </Routes>
         </Router>
-
+        </CartProvider>
 
       </>
 

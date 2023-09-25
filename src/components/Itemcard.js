@@ -1,10 +1,9 @@
 import './Itemcard.css';
+import Cart from './Cart'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
-
-
+import { CartProvider, useCart} from "react-use-cart";
 
 
 const Itemcard = (props)=> {
@@ -19,7 +18,7 @@ const listItems = props.desc.map((desc) =>
     {desc}
   </li>);
 
-
+const { addItem } = useCart();
 
         return (
    
@@ -32,16 +31,22 @@ const listItems = props.desc.map((desc) =>
                         <ul className="card-text">
                             <li>{listItems}</li>
                         </ul>
-                        <button className="btn btn-primary" onClick={handleShow}>Contratar</button>
+
+                        <div>
+                           <button  className="btn btn-primary" onClick={()=>{addItem(props.item);handleShow()}}>Contratar</button>
+                        </div>
+
                         </div>
                 </div>
 
-
+                <CartProvider>
                 <Modal show={show} onHide={handleClose}>
                   <Modal.Header closeButton>
                     <Modal.Title>Completar compra</Modal.Title>
                   </Modal.Header>
-                  <Modal.Body>¡Ya casi lo logras! Completa tu pedido</Modal.Body>
+                  <Modal.Body>¡Ya casi lo logras! Completa tu pedido
+                  <Cart/>
+                  </Modal.Body>
                   <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                       Volver
@@ -51,6 +56,8 @@ const listItems = props.desc.map((desc) =>
                     </Button>
                   </Modal.Footer>
                 </Modal>
+                </CartProvider>
+
          
 
               

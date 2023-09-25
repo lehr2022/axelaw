@@ -6,6 +6,7 @@ import data from "./Planes";
 
 
 
+
 class Consulta extends Component{
     render(){
         return(
@@ -20,7 +21,13 @@ class Consulta extends Component{
             <section className="py-4 container">         
             <div className = "row justify-content-center">
                 {data.productData.map((item, index)=>{
-                    return(<Itemcard img={item.img} title={item.title} desc={item.desc} price={item.price} key={index}/>)
+                    return(<Itemcard 
+                        img={item.img} 
+                        title={item.title} 
+                        desc={item.desc} 
+                        price={item.price}
+                        item={item} 
+                        key={index}/>)
                 })}
                 
             </div>
